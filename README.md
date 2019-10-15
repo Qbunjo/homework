@@ -16,3 +16,5 @@ c<a+b
 double a = Double.parseDouble(args[0]);  
 string mark = String.parseString (args[1];  
 double b = Double.parseDouble(args[2]);
+  
+   if(str == null || str.isEmpty()) return "";
