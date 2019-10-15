@@ -11,10 +11,19 @@ b<a+c
 c<a+b  
 **if all inequalities are true, the triangle exists**
 
+## 1.3 shoe repair  
+  
+## 1.4 BMI arguments
+  
+## 1.5 renovating company
+  
 ## 1.6 calculator
 *we have to use parsing here*  
 double a = Double.parseDouble(args[0]);  
 string mark = String.parseString (args[1]);  
 double b = Double.parseDouble(args[2]);
+if(str == null || str.isEmpty()) return "";  
+   
+## 1.7 math riddle
   
-   if(str == null || str.isEmpty()) return "";
+## 1.8 guess the number
