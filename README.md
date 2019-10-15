@@ -1,6 +1,6 @@
-# 1.2 homework
+# homework
 *these are my notes*
-## heron formula and triangle field calculation
+## 1.2 heron formula and triangle field calculation
 > **sqrt (p(p-a)(p-b)(p-c))**,  
 where  
 > **p=(a+b+c)/2**  
