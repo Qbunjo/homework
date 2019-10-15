@@ -7,3 +7,4 @@ inequalities for triangle checkout<br>
 > a<b+c<br>
 > b<a+c<br>
 > c<a+b<br>
+if all inequalities are true, the triangle exists
