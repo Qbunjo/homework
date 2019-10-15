@@ -21,7 +21,7 @@ c<a+b
 *we have to use parsing here*  
 double a = Double.parseDouble(args[0]);  
 string mark = String.parseString (args[1]);  
-double b = Double.parseDouble(args[2]);
+double b = Double.parseDouble(args[2]);  
 if(str == null || str.isEmpty()) return "";  
    
 ## 1.7 math riddle
