@@ -1,10 +1,14 @@
-package homework;
+package pl.homework.z1;
+
 //public class add
 //public class subtract
 //public class multiply
 //public class divide
+
 import java.util.Scanner;
+
 public class Calculator {
+
     public static void main(String[] args) {
         System.out.println("Witaj. Kalkulator");
         Scanner scan = new Scanner(System.in);
@@ -12,8 +16,9 @@ public class Calculator {
             System.out.println("Wpisz dzialanie:");
             String expr = scan.nextLine();
             //System.out.println(expr);
-            if (expr.contains("koniec"))// this doesnt work - why?
-            {break;}
+            if (expr.contains("koniec")) {
+                break;
+            }
             //here we will parse the variable into three subvariables
             //double a = Double.parseDouble(expr[0]);
             //string mark = String.parseString (expr[1]);
@@ -35,6 +40,6 @@ public class Calculator {
             // System.out.println ("Wpisz poprawne działanie ! (+-*/) ");
             //}
             //System.out.println ("Wynik" + expr + "= "+ result);
-        };
+        }
     }
 }
