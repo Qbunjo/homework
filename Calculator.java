@@ -12,7 +12,7 @@ public class Calculator {
             System.out.println("Wpisz dzialanie:");
             String expr = scan.nextLine();
             //System.out.println(expr);
-            if (expr =="koniec")// this doesnt work - why?
+            if (expr.contains("koniec"))// this doesnt work - why?
             {break;}
             //here we will parse the variable into three subvariables
             //double a = Double.parseDouble(expr[0]);
