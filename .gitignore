@@ -1,0 +1,6 @@
+# List of files and folders that should be ignored by Git
+
+# files specific to IntelliJ:
+/.idea/
+/homework.iml
+
