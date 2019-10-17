@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Shoemaker {
+public class Main {
   static String Translate(int doW) {
     switch (doW) {
 
@@ -52,10 +52,10 @@ public class Shoemaker {
     do {
       System.out.println("Podaj dzień tygodnia, w którym oddałeś buty (1-7) :");
       dayofWeek = scan.nextInt();
-      if (dayofWeek > 7) {
+      if (dayofWeek > 7 || dayofWeek < 1) {
         System.out.println("Błąd: Tydzień ma 7 dni! ");
       }
-    } while (dayofWeek > 7);
+    } while (dayofWeek > 7 || dayofWeek < 1);
     System.out.println(dayofWeek + " to jest " + Translate(dayofWeek));
 
     System.out.println("Jak długo ma trwać naprawa? (ilość dni) :");
@@ -68,4 +68,4 @@ public class Shoemaker {
     System.out.println("Dzień odbioru: " + Translate(Pickup));
 
   }
-}
+  }
