@@ -14,8 +14,8 @@ c<a+b
 **if all inequalities are true, the triangle exists**
 
 ## 1.3 shoe repair  
-if dayOfWeek >7, dayOfWeek -=7;
-if dayOfWeek =7, dayOfWeek++, //sunday is closed
+if dayOfWeek >7, dayOfWeek -=7;  
+if dayOfWeek =7, dayOfWeek++, //sunday is closed  
   
 ## 1.4 BMI arguments
   
