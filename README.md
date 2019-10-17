@@ -21,9 +21,9 @@ c<a+b
   
 ## 1.6 calculator
 *we have to use parsing here*  
-double a = expr.parseDouble();  
-string mark = expr.parseString();  
-double b = expr.parseDouble();  
+double a = Double.parseDouble(expr);  
+string mark = (already a string, does not need parsing)  
+double b = Double.parseDouble(expr);  
    
 ## 1.7 math riddle
   
