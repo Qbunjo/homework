@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Shoemaker {
   static String Translate(int doW) {
     switch (doW) {
 
