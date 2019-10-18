@@ -12,13 +12,13 @@ a<b+c
 b<a+c  
 c<a+b  
 **if all inequalities are true, the triangle exists**
-
+#done  
 ## 1.3 shoe repair  
 if dayOfWeek >7, dayOfWeek -=7;  
 if dayOfWeek =7, dayOfWeek++, //sunday is closed  
-  
+#done  
 ## 1.4 BMI arguments
-  
+#done  
 ## 1.5 renovating company
   
 ## 1.6 calculator
@@ -26,7 +26,7 @@ if dayOfWeek =7, dayOfWeek++, //sunday is closed
 double a = Double.parseDouble(expr);  
 string mark = (already a string, does not need parsing)  
 double b = Double.parseDouble(expr);  
-   
+#done  
 ## 1.7 math riddle
   
 ## 1.8 guess the number
