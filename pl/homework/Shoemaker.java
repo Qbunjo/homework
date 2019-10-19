@@ -1,9 +1,9 @@
+package homework1;
 import java.util.Scanner;
 
 public class Shoemaker {
-  static String Translate(int doW) {
+  static String Num2DoW(int doW) {
     switch (doW) {
-
     case 1:
       return "Poniedzialek";
     case 2:
@@ -19,7 +19,7 @@ public class Shoemaker {
     case 7:
       return "Niedziela";
     default:
-      return "blahblah";
+      return "Notgonnahappen";
     }
   }
 
@@ -52,11 +52,12 @@ public class Shoemaker {
     do {
       System.out.println("Podaj dzień tygodnia, w którym oddałeś buty (1-7) :");
       dayofWeek = scan.nextInt();
+      // w wersji drugiej pobieramy string, tłumaczymy funkcją DoW2Num
       if (dayofWeek > 7 || dayofWeek < 1) {
         System.out.println("Błąd: Tydzień ma 7 dni! ");
       }
     } while (dayofWeek > 7 || dayofWeek < 1);
-    System.out.println(dayofWeek + " to jest " + Translate(dayofWeek));
+    System.out.println(dayofWeek + " to jest " + Num2DoW(dayofWeek));
 
     System.out.println("Jak długo ma trwać naprawa? (ilość dni) :");
     int RepairTime = scan.nextInt();
@@ -65,7 +66,7 @@ public class Shoemaker {
       Pickup -= 7;
     }
 
-    System.out.println("Dzień odbioru: " + Translate(Pickup));
-
+    System.out.println("Dzień odbioru: " + Num2DoW(Pickup));
+    scan.close();
   }
   }
