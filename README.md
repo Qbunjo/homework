@@ -20,7 +20,7 @@ if dayOfWeek =7, dayOfWeek++, //sunday is closed
 ## 1.4 BMI arguments
 ### done  
 ## 1.5 renovating company
-  
+### done  
 ## 1.6 calculator
 *we have to use parsing here*  
 double a = Double.parseDouble(expr);  
