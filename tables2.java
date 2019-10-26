@@ -31,7 +31,18 @@ public class Tablice2 {
 		System.out.println("Liczby po zmianie:" + Arrays.toString(liczby));
 		
 		// 2- pętla "for each" lub "enhanced for loop" - nie pozwala na wykonywanie zbyt skomplikowanych zadań, ale jest bardzo prosta w zapisie
-		
+		for (String imie:imiona) {
+			System.out.println(" # " +imie);
+		}// od razu dostajemy elementy z tablicy, to one wypisywane są na zmienną
+		// w przypadku tablicy z liczbami, na zmienną wypisywane są wartości, nie indeksy
+		// nie używać nazwy "i", bo byłoby to mylące (to nie indeks)
+		for (int liczba:liczby) {
+			System.out.println(" $"+liczba);
+			//ograniczenia
+			// - dostęp do jednego elementu naraz
+			// - brak wygodnej możliwości modyfikacji zawartośic tablicy
+			// zmiana zmiennej "liczba" nie zmienia nic w tablicy
+		}
 	}
 
 }
