@@ -1,5 +1,3 @@
-package petle;
-
 public class TabliczkaMnozenia {
 
 	public static void main(String[] args) {

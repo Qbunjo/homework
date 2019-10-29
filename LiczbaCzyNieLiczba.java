@@ -1,5 +1,3 @@
-package interakcja.konsola;
-
 import java.util.Scanner;
 
 public class LiczbaCzyNieLiczba {

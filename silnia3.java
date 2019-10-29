@@ -1,5 +1,3 @@
-package funkcje;
-
 import java.math.BigInteger;
 import java.util.Scanner;
 
