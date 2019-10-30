@@ -1,4 +1,5 @@
-package homework1;
+package pl.homework.z1;
+
 import java.util.Scanner;
 
 public class Shoemaker {

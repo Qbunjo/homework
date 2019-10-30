@@ -1,4 +1,4 @@
-package homework1;
+package pl.homework.z1;
 
 public class BMI_arguments3 {
 
