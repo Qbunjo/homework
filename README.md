@@ -1,4 +1,7 @@
-# homework
+# homework 2  
+homework from session 2
+
+# homework 1
 *these are my notes*
 
 ## 1.2 heron formula and triangle field calculation
