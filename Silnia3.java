@@ -1,9 +1,7 @@
-package funkcje;
-
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class silnia3 {
+public class Silnia3 {
 
 	static BigInteger silnia(int n) {
 		BigInteger result = BigInteger.ONE;

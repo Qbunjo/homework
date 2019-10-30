@@ -1,8 +1,6 @@
-package tablice;
-
 import java.util.Arrays;
 
-public class Tablice2 {
+public class Tables2 {
 
 	public static void main(String[] args) {
 		String[] imiona = { "Ala", "Ola", "Ela", "Adam", "Ludwik", "Ksawery" };
