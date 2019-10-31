@@ -4,7 +4,7 @@
  
 import java.util.Scanner;
 
-public class Main {
+public class Fibonacci {
 
     static long FiNumber(int cyfra)  {
          long table[] = new long[cyfra+1]; //zawsze tworz tablice o 1 wieksza, zeby (i-2) nie było <0
