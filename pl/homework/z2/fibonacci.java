@@ -1,34 +1,32 @@
 
 //package pl.homework.z2;
 
+ 
 import java.util.Scanner;
 
 public class Main {
 
     static long FiNumber(int cyfra)  {
-        if (cyfra == 0) {
-            return 0;
-        }
-        if (cyfra == 1) {
-        return 1; }
-        // pierwszym argumentem, od którego liczymy jest 2, a 1+2=3, toteż p=3
-        long p=3;
-        for (int i=2; i <= cyfra; i++){
-        p += (i+1);
-        System.out.println(p);
-    }
-        return p;
+         long table[] = new long[cyfra+1]; //zawsze tworz tablice o 1 wieksza, zeby (i-2) nie było <0
+table[0]=1; 
+table[1]=1;
+if (cyfra==1 || cyfra==2){
+  
+  return 1;}
+            for (int i=2;i<cyfra;i++){
+         table[i]=table[i-2]+table[i-1];
+          }
+        return table[(cyfra-1)];//bo pierwszy element tablicy ma numer 0
     }
     
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Program oblicza kolejną liczbę ciągu Fibonacciego");
-        System.out.println("Którą liczbę ciągu chcesz obliczyć?:");
+        System.out.println("Który element ciągu chcesz obliczyć?:");
 
         int InpNum = sc.nextInt();
        
-        System.out.println("Piąta liczba to:" +FiNumber(InpNum));
-    }}
-
-    
+        System.out.println(InpNum + "  element ciągu to:" +FiNumber(InpNum));
+    }
+    }
