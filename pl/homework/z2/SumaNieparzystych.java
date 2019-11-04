@@ -1,6 +1,6 @@
 package pl.homework.z2;
 
-public class sumaNieparzystych {
+public class SumaNieparzystych {
 
 	static int sumNiepar(int[] t) {
 		int suma = 0;
