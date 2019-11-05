@@ -2,7 +2,7 @@ package pl.homework.z2;
 
 import java.util.Scanner;
 
-public class Main {
+public class IsFirstNumber {
 
     static boolean IsFirst(long cyfra)  {
       if (cyfra==1){return false;};// nie ma sensu liczyć dla 1, bo liczba pierwsza dzieli się przez tylko siebie i przez 1
