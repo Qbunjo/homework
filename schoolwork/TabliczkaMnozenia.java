@@ -1,3 +1,5 @@
+package schoolwork;
+
 public class TabliczkaMnozenia {
 
 	public static void main(String[] args) {

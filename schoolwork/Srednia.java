@@ -1,3 +1,5 @@
+package schoolwork;
+
 import java.util.Scanner;
 
 public class Srednia {

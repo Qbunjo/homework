@@ -2,7 +2,7 @@ package pl.homework.z2;
 
 import java.util.Scanner;
 
-public class ileCyfr {
+public class IleCyfr {
 
 	static int liczCyfry(long wybor) {
 		String policz = String.valueOf(wybor);
