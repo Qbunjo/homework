@@ -1,4 +1,4 @@
-package schoolwork;
+package pl.schoolwork;
 
 public class TabliczkaMnozenia {
 
