@@ -1,3 +1,6 @@
+# homework 3
+homework from session 3
+
 # homework 2  
 homework from session 2
 
