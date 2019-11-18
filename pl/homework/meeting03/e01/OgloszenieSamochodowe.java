@@ -1,4 +1,4 @@
-package ogloszenie;
+package pl.homework.meeting03.e01;
 
 public class OgloszenieSamochodowe extends Ogloszenie {
 	private String model;
