@@ -1,4 +1,4 @@
-package pl.homework.z2;
+package pl.homework.meeting02;
 
 public class SumaNieparzystych {
 

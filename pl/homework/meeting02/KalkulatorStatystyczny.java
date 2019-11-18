@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package KalkulatorProby;
+package pl.homework.meeting02;
 
 import static java.lang.Math.pow;
 import javax.swing.JOptionPane;

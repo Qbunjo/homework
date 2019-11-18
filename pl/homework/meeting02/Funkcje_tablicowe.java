@@ -1,4 +1,4 @@
-package homework2;
+package pl.homework.meeting02;
 
 import java.util.ArrayList;
 import java.util.List;
