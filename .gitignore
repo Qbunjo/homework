@@ -3,6 +3,7 @@
 # files specific to IntelliJ:
 /.idea/
 /homework.iml
+/out/
 
 # files specific to Eclipse
 /.project
