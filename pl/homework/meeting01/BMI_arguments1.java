@@ -1,4 +1,4 @@
-package pl.homework.z1;
+package pl.homework.meeting01;
 
 import javax.swing.JOptionPane;
 

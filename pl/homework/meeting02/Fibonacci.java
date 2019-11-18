@@ -1,5 +1,5 @@
 
-package pl.homework.z2;
+package pl.homework.meeting02;
 
  
 import java.util.Scanner;
