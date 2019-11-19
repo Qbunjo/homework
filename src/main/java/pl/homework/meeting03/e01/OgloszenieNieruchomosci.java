@@ -53,7 +53,7 @@ public class OgloszenieNieruchomosci extends Ogloszenie {
 
 	@Override
 	public String toString() {
-		return "OgloszenieNieruchomosci [Tytuł: "+ getTytul() + ", Opis:" + getOpis() + ", Cena:" + getCena()+ 
+		return "OgloszenieNieruchomosci: Tytuł: "+ getTytul() + ", Opis:" + getOpis() + ", Cena:" + getCena()+ 
 				", Kontakt:" + getKontakt()+"miejscowosc=" + miejscowosc + ", metraz=" + metraz + ", liczbaPokoi="
 				+ liczbaPokoi + " Liczba kondygnacji:" + +liczbaKondygnacji+ "]";
 	}
