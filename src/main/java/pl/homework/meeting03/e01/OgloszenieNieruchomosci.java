@@ -58,6 +58,42 @@ public class OgloszenieNieruchomosci extends Ogloszenie {
 				+ liczbaPokoi + " Liczba kondygnacji:" + +liczbaKondygnacji+ "]";
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + liczbaKondygnacji;
+		result = prime * result + liczbaPokoi;
+		long temp;
+		temp = Double.doubleToLongBits(metraz);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + ((miejscowosc == null) ? 0 : miejscowosc.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		OgloszenieNieruchomosci other = (OgloszenieNieruchomosci) obj;
+		if (liczbaKondygnacji != other.liczbaKondygnacji)
+			return false;
+		if (liczbaPokoi != other.liczbaPokoi)
+			return false;
+		if (Double.doubleToLongBits(metraz) != Double.doubleToLongBits(other.metraz))
+			return false;
+		if (miejscowosc == null) {
+			if (other.miejscowosc != null)
+				return false;
+		} else if (!miejscowosc.equals(other.miejscowosc))
+			return false;
+		return true;
+	}
+
 
 	}
 

@@ -133,6 +133,64 @@ public class OgloszenieSamochodowe extends Ogloszenie {
 	}
 
 
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (czyBity ? 1231 : 1237);
+		result = prime * result + ((marka == null) ? 0 : marka.hashCode());
+		result = prime * result + moc;
+		result = prime * result + ((model == null) ? 0 : model.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(pojemnosc);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + przebieg;
+		result = prime * result + ((rodzajPaliwa == null) ? 0 : rodzajPaliwa.hashCode());
+		result = prime * result + rokProd;
+		return result;
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		OgloszenieSamochodowe other = (OgloszenieSamochodowe) obj;
+		if (czyBity != other.czyBity)
+			return false;
+		if (marka == null) {
+			if (other.marka != null)
+				return false;
+		} else if (!marka.equals(other.marka))
+			return false;
+		if (moc != other.moc)
+			return false;
+		if (model == null) {
+			if (other.model != null)
+				return false;
+		} else if (!model.equals(other.model))
+			return false;
+		if (Double.doubleToLongBits(pojemnosc) != Double.doubleToLongBits(other.pojemnosc))
+			return false;
+		if (przebieg != other.przebieg)
+			return false;
+		if (rodzajPaliwa == null) {
+			if (other.rodzajPaliwa != null)
+				return false;
+		} else if (!rodzajPaliwa.equals(other.rodzajPaliwa))
+			return false;
+		if (rokProd != other.rokProd)
+			return false;
+		return true;
+	}
+
+
 	
 
 	
