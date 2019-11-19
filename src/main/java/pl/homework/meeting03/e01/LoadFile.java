@@ -8,9 +8,8 @@ import java.util.Scanner;
 
 public class LoadFile {
 
-	File plik = new File("ogloszenia.csv");
-
-	public static List<Ogloszenie> wczytajDane(File plik) {
+	
+	public static List<Ogloszenie> readFile(File plik) {
 		List<Ogloszenie> lista = new ArrayList<>();
 
 		try (Scanner sc = new Scanner(plik)) {
@@ -44,6 +43,8 @@ public class LoadFile {
 						chunks[11],//paliwo
 						bity);
 				lista.add(announce);
+				System.out.println("Loaded car announcement succesfully.");
+				break;
 			case 2:
 				int cena2=Integer.parseInt(chunks[3]);
 				double metraz=Double.parseDouble(chunks[6]);
@@ -59,9 +60,11 @@ public class LoadFile {
 						liczbaPokoi,
 						liczbaKondygnacji);
 				lista.add(announce2);
-				
+				System.out.println("Loaded estate announcement succesfully.");
+				break;
 			default:
-					System.out.println("Error:Unknown type of announcement read");
+					System.out.println("Error:Unknown type of announcement read!");
+					break;
 				}
 						
 							}
