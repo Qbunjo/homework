@@ -17,10 +17,10 @@ public class OgloszenieSamochodowe extends Ogloszenie {
 		super(tytul,opis,cena,kontakt);
 		this.model = model;
 		this.marka = marka;
-		this.rokProd = rokProd;
-		this.przebieg = przebieg;
-		this.pojemnosc = pojemnosc;
-		this.moc = moc;
+		this.rokProd = rokProd;//int
+		this.przebieg = przebieg;//int
+		this.pojemnosc = pojemnosc;//double
+		this.moc = moc;//int
 		this.rodzajPaliwa = rodzajPaliwa;
 		this.czyBity = czyBity;
 	}
