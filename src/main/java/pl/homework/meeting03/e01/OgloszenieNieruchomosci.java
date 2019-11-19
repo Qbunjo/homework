@@ -7,12 +7,14 @@ public class OgloszenieNieruchomosci extends Ogloszenie {
 	private String miejscowosc;
 	private double metraz;
 	private int liczbaPokoi;
+	private int liczbaKondygnacji;
 
-	public OgloszenieNieruchomosci(String tytul, String opis, int cena, String kontakt,String miejscowosc, double metraz, int liczbaPokoi) {
+	public OgloszenieNieruchomosci(String tytul, String opis, int cena, String kontakt,String miejscowosc, double metraz, int liczbaPokoi, int liczbaKondygnacji ) {
 		super(tytul,opis,cena,kontakt);
 		this.miejscowosc = miejscowosc;
 		this.metraz = metraz;
 		this.liczbaPokoi = liczbaPokoi;
+		this.liczbaKondygnacji= liczbaKondygnacji;
 	}
 
 	public String getMiejscowosc() {
@@ -39,18 +41,21 @@ public class OgloszenieNieruchomosci extends Ogloszenie {
 		this.liczbaPokoi = liczbaPokoi;
 	}
 
-	public OgloszenieNieruchomosci(String miejscowosc, double metraz, int liczbaPokoi) {
-		super();
-		this.miejscowosc = miejscowosc;
-		this.metraz = metraz;
-		this.liczbaPokoi = liczbaPokoi;
+
+
+	public int getLiczbaKondygnacji() {
+		return liczbaKondygnacji;
+	}
+
+	public void setLiczbaKondygnacji(int liczbaKondygnacji) {
+		this.liczbaKondygnacji = liczbaKondygnacji;
 	}
 
 	@Override
 	public String toString() {
 		return "OgloszenieNieruchomosci [Tytuł: "+ getTytul() + ", Opis:" + getOpis() + ", Cena:" + getCena()+ 
 				", Kontakt:" + getKontakt()+"miejscowosc=" + miejscowosc + ", metraz=" + metraz + ", liczbaPokoi="
-				+ liczbaPokoi +  "]";
+				+ liczbaPokoi + " Liczba kondygnacji:" + +liczbaKondygnacji+ "]";
 	}
 
 
