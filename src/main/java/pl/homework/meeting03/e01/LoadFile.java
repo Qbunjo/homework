@@ -49,18 +49,18 @@ public class LoadFile {
 				break;
 			case 2:
 				int cena2=Integer.parseInt(chunks[3]);
-				double metraz=Double.parseDouble(chunks[6]);
-				int liczbaPokoi=Integer.parseInt(chunks[7]);
-				int liczbaKondygnacji=Integer.parseInt(chunks[8]);
+				double measures=Double.parseDouble(chunks[6]);
+				int rooms=Integer.parseInt(chunks[7]);
+				int floors=Integer.parseInt(chunks[8]);
 				OgloszenieNieruchomosci announce2= new OgloszenieNieruchomosci(
 						chunks[1],//title
 						chunks[2],//descript
 						cena2,
 						chunks[4],//contact
 						chunks[5],//city
-						metraz,
-						liczbaPokoi,
-						liczbaKondygnacji);
+						measures,
+						rooms,
+						floors);
 				lista.add(announce2);
 				System.out.println("Loaded estate announcement succesfully.");
 				break;
