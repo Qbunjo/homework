@@ -20,9 +20,12 @@ public class TestOgloszenie {
 			System.out.println(announcement.toString());
 		}
 		System.out.println(".End List.");
+		//SaveFile(list2);
 		// here we will add the menu to add announcements
 		//after adding the entry to the list, it should be saved
 		// save(list);
 	}
+
+	
 
 }

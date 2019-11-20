@@ -2,7 +2,7 @@ package pl.homework.meeting03.e01;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.List;
 
 public class SaveFile {
