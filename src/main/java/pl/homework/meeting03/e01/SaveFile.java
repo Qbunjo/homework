@@ -9,7 +9,7 @@ public class SaveFile {
 
 	public static void save(List<Ogloszenie> anonList,String filePath) throws FileNotFoundException {
 		try {
-			PrintWriter out = new PrintWriter(filePath+"ogloszenia2.csv");
+			PrintWriter out = new PrintWriter(filePath+"ogloszenia.csv");
 			// PrintWriter out = new PrintWriter("/home/patryk/Pulpit/nowy_plik.txt");
 
 			System.out.println("File for save found.");
