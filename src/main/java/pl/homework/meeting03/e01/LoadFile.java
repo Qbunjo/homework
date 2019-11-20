@@ -23,27 +23,27 @@ public class LoadFile {
 				//first sign differentiates the announcements
 			switch(id) {	
 			case 1:
-				int cena=Integer.parseInt(chunks[3]);
-				int rokProd = Integer.parseInt(chunks[7]);//int
-				int przebieg = Integer.parseInt(chunks[8]);//int
-				double pojemnosc = Double.parseDouble(chunks[9]);//double
-				int moc = Integer.parseInt(chunks[10]);//int
-				boolean bity = Boolean.parseBoolean(chunks[12]);
+				int price=Integer.parseInt(chunks[3]);
+				int yearOfPr = Integer.parseInt(chunks[7]);//int
+				int mileage = Integer.parseInt(chunks[8]);//int
+				double engineCapac = Double.parseDouble(chunks[9]);//double
+				int hp = Integer.parseInt(chunks[10]);//int
+				boolean damaged = Boolean.parseBoolean(chunks[12]);
 				
 				//let's create a car announcement!
 				OgloszenieSamochodowe announce = new OgloszenieSamochodowe(
-						chunks[1], //tytul
-						chunks[2], //opis
-						cena, 
-						chunks[4], //kontakt
+						chunks[1], //title
+						chunks[2], //descript
+						price, 
+						chunks[4], //contact
 						chunks[5], //model
-						chunks[6], //marka
-						rokProd, //rok
-						przebieg,
-						pojemnosc,
-						moc,
-						chunks[11],//paliwo
-						bity);
+						chunks[6], //brand
+						yearOfPr, //year
+						mileage,
+						engineCapac,
+						hp,
+						chunks[11],//fuel
+						damaged);
 				lista.add(announce);
 				System.out.println("Loaded car announcement succesfully.");
 				break;
@@ -53,11 +53,11 @@ public class LoadFile {
 				int liczbaPokoi=Integer.parseInt(chunks[7]);
 				int liczbaKondygnacji=Integer.parseInt(chunks[8]);
 				OgloszenieNieruchomosci announce2= new OgloszenieNieruchomosci(
-						chunks[1],//tytul
-						chunks[2],//opis
+						chunks[1],//title
+						chunks[2],//descript
 						cena2,
-						chunks[4],//kontakt
-						chunks[5],//miejscowosc
+						chunks[4],//contact
+						chunks[5],//city
 						metraz,
 						liczbaPokoi,
 						liczbaKondygnacji);
@@ -65,7 +65,7 @@ public class LoadFile {
 				System.out.println("Loaded estate announcement succesfully.");
 				break;
 			default:
-					System.out.println("Error:Unknown type of announcement read!");
+					System.out.println("Error:Unknown type of announcement read! Skipping entry.");
 					break;
 				}
 						
