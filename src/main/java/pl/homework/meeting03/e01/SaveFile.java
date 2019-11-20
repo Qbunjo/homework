@@ -7,24 +7,23 @@ import java.util.List;
 
 public class SaveFile {
 
-	public void Save(List<Ogloszenie>anonList) throws FileNotFoundException {
+	public static void save(List<Ogloszenie> anonList,String filePath) throws FileNotFoundException {
 		try {
-			PrintWriter out = new PrintWriter("ogloszenia2.csv");
+			PrintWriter out = new PrintWriter(filePath+"ogloszenia2.csv");
 			// PrintWriter out = new PrintWriter("/home/patryk/Pulpit/nowy_plik.txt");
 
-			System.out.println("File succesfully opened for save.");
+			System.out.println("File for save found.");
 
 			for (Ogloszenie anounce : anonList) {
 				out.println(anounce);
-				out.close();
+				
 			}
-
+			out.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 
-			// for (Ogloszenie announce : announces)
-			// pw.println(Ogloszenie.toString());
-
 		}
+		System.out.println("File saved.");
 	}
+
 }

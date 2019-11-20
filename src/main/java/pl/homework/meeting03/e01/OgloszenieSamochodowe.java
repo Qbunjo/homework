@@ -126,10 +126,10 @@ public class OgloszenieSamochodowe extends Ogloszenie {
 
 	@Override
 	public String toString() {
-		return "OgloszenieSamochodowe: Tytuł:" + getTytul() + ", Opis:" + getOpis() + ", Cena:" + 
-				+ getCena() + ", Kontakt:" + getKontakt() +" model=" + model + ", marka=" + marka + ", rokProd=" + rokProd + ", przebieg="
-				+ przebieg + ", pojemnosc=" + pojemnosc + ", moc=" + moc + ", rodzajPaliwa=" + rodzajPaliwa
-				+ ", czyBity=" + czyBity + " ]";
+		return "1," + getTytul() + "," + getOpis() + "," + 
+				+ getCena() + "," + getKontakt() +"," + model + "," + marka + "," + rokProd + ","
+				+ przebieg + "," + pojemnosc + "," + moc + "," + rodzajPaliwa
+				+ "," + czyBity ;
 	}
 
 
