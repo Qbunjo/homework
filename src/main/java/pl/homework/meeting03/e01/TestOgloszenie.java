@@ -8,14 +8,14 @@ public class TestOgloszenie {
 	public static void main(String[] args) {
 
 		File plik = new File(
-					"C:\\Users\\Jakuboslaw\\eclipse-workspace\\git\\src\\main\\java\\pl\\homework\\meeting03\\e01\\ogloszenia.csv");
+				"/home/qbunjo/git/homework/src/main/java/pl/homework/meeting03/e01/ogloszenia.csv");	//linux path
+				//"C:\\Users\\Jakuboslaw\\eclipse-workspace\\git\\src\\main\\java\\pl\\homework\\meeting03\\e01\\ogloszenia.csv");
 
-		// OgloszenieNieruchomosci ogln1= new OgloszenieNieruchomosci(null, 0, 0);
-
-		List<Ogloszenie> lista2 = LoadFile.readFile(plik);
 	
-		for (Ogloszenie model : lista2) {
-			System.out.println(model.toString());
+		List<Ogloszenie> list2 = LoadFile.readFile(plik);
+	
+		for (Ogloszenie register : list2) {
+			System.out.println(register.toString());
 		}
 
 	}
