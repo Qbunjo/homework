@@ -1,5 +1,5 @@
-1;Sprzedam Opla;Piękne auto;20;12345;Kadett;Opel;1936;2000000;1.2;39;PB;false
-1;Cudne auto;Nówka Sztuka;10000;434543;Carrera;Porsche;2019;0;2.5;200;PB;false;
-1;0;0;0;0;0;0;0;0;0;0;0;
-1;Skoda Fabia;Czerwona;45;44324;Fabia;Skoda;2009;194000;1.2;45;LPG;false;
-2;Duży dom;w zieleni;2000000;8447373;Pcim Górny;400;7;2
+1,Sprzedam Opla,Piękne auto,20,12345,Kadett,Opel,1936,2000000,1.2,39,PB,false
+1,Cudne auto,Nówka Sztuka,10000,434543,Carrera,Porsche,2019,0,2.5,200,PB,false,
+1,0,0,0,0,0,0,0,0,0,0,0,
+1,Skoda Fabia,Czerwona,45,44324,Fabia,Skoda,2009,194000,1.2,45,LPG,false,
+2,Duży dom,w zieleni,2000000,8447373,Pcim Górny,400,7,2

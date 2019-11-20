@@ -9,13 +9,15 @@ import java.util.Scanner;
 public class LoadFile {
 
 	
+	private static final String CSV_SEPARATOR = ",";
+
 	public static List<Ogloszenie> readFile(File plik) {
 		List<Ogloszenie> lista = new ArrayList<>();
 
 		try (Scanner sc = new Scanner(plik)) {
 			while (sc.hasNextLine()) {
 				String line = sc.nextLine();
-				String[] chunks = line.split(";", 13);
+				String[] chunks = line.split(CSV_SEPARATOR, 13);
 
 				int id = Integer.parseInt(chunks[0]);
 				//first sign differentiates the announcements
