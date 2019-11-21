@@ -131,6 +131,12 @@ public class OgloszenieSamochodowe extends Ogloszenie {
 				+ przebieg + "," + pojemnosc + "," + moc + "," + rodzajPaliwa
 				+ "," + czyBity ;
 	}
+	public String showCarAnnounce() {
+		return "Car Announcement: " + getTytul() + ", " + getOpis() + ", Price:" + 
+				+ getCena() + ", Contact to seller:" + getKontakt() +", Model:" + model + ", Brand:" + marka + ", Year of production:" + rokProd + ", Mileage:"
+				+ przebieg + ", Engine capacity:" + pojemnosc + ", HP power:" + moc + ", Fuel:" + rodzajPaliwa
+				+ ", Damaged:" + czyBity ;
+	}
 
 
 

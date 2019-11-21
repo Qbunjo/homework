@@ -57,6 +57,12 @@ public class OgloszenieNieruchomosci extends Ogloszenie {
 				"," + getKontakt()+"," + miejscowosc + "," + metraz + ","
 				+ liczbaPokoi + "," + +liczbaKondygnacji;
 	}
+	
+	public String showEstAnnounce() {
+		return "Real Estate Announcement: "+ getTytul() + ", " + getOpis() + ", Price:" + getCena()+ 
+				", Contact to seller:" + getKontakt()+", City:" + miejscowosc + ", Measures:" + metraz + ", Room number:"
+				+ liczbaPokoi + ", Floor number:" + +liczbaKondygnacji;
+	}
 
 	@Override
 	public int hashCode() {
