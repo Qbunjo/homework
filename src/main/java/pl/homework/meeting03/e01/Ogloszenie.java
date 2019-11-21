@@ -51,7 +51,7 @@ public void setKontakt(String kontakt) {
 
 @Override
 public String toString() {
-	return "Ogloszenie [tytul=" + tytul + ", opis=" + opis + ", cena=" + cena + ", kontakt=" + kontakt + "]";
+	return "Ogloszenie [tytul:" + tytul + ", opis:" + opis + ", cena:" + cena + ", kontakt:" + kontakt + "]";
 }
  
  
