@@ -2,6 +2,7 @@ package pl.homework.meeting03.e01;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -9,6 +10,13 @@ import java.util.Scanner;
 public class LoadFile {
 
 	private static final String CSV_SEPARATOR = ",";
+
+	List<Ogloszenie> readFromFile(String relativePath) {
+		URL url = this.getClass().getClassLoader().getResource(relativePath);
+		String absolutePath = url.getPath();
+		File file = new File(absolutePath);
+		return readFile(file);
+	}
 
 	public static List<Ogloszenie> readFile(File plik) {
 		List<Ogloszenie> lista = new ArrayList<>();

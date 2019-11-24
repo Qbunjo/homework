@@ -2,15 +2,17 @@ package pl.homework.meeting03.e01;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-//import java.util.ArrayList;
+import java.net.URL;
 import java.util.List;
 
 public class SaveFile {
 
-	public static void save(List<Ogloszenie> anonList,String filePath) throws FileNotFoundException {
+	public void save(List<Ogloszenie> anonList, String relativePath) {
+		URL url = this.getClass().getClassLoader().getResource(relativePath);
+		String absolutePath = url.getPath();
 		try {
-			PrintWriter out = new PrintWriter(filePath+"ogloszenia.csv");
-			// PrintWriter out = new PrintWriter("/home/patryk/Pulpit/nowy_plik.txt");
+
+			PrintWriter out = new PrintWriter(absolutePath);
 
 			System.out.println("File for save found.");
 
