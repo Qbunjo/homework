@@ -8,7 +8,7 @@ public class TestOgloszenie {
 
 	public static void main(String[] args) {
 
-		List<Ogloszenie> list2 = new LoadFile().readFromFile(CSV_FILE_PATH);
+		List<Ogloszenie> list2 = LoadFile.readFromFile(CSV_FILE_PATH);
 
 		for (
 
@@ -22,7 +22,7 @@ public class TestOgloszenie {
 		}
 		// here we will add the menu to add announcements
 		// after adding the entry to the list, it should be saved
-		new SaveFile().save(list2, CSV_FILE_PATH);
+		SaveFile.save(list2, CSV_FILE_PATH);
 	}
 
 }

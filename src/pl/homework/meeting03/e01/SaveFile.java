@@ -7,8 +7,8 @@ import java.util.List;
 
 public class SaveFile {
 
-	public void save(List<Ogloszenie> anonList, String relativePath) {
-		URL url = this.getClass().getClassLoader().getResource(relativePath);
+	public static void save(List<Ogloszenie> anonList,String filePath) {
+		URL url = SaveFile.class.getClassLoader().getResource(filePath);
 		String absolutePath = url.getPath();
 		try {
 

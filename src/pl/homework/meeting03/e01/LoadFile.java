@@ -11,14 +11,14 @@ public class LoadFile {
 
 	private static final String CSV_SEPARATOR = ",";
 
-	List<Ogloszenie> readFromFile(String relativePath) {
-		URL url = this.getClass().getClassLoader().getResource(relativePath);
+	static List<Ogloszenie> readFromFile(String relativePath) {
+		URL url = LoadFile.class.getClassLoader().getResource(relativePath);
 		String absolutePath = url.getPath();
 		File file = new File(absolutePath);
 		return readFile(file);
 	}
 
-	public static List<Ogloszenie> readFile(File plik) {
+	private static List<Ogloszenie> readFile(File plik) {
 		List<Ogloszenie> lista = new ArrayList<>();
 
 		try (Scanner sc = new Scanner(plik)) {
