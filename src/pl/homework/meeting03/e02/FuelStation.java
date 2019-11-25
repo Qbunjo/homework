@@ -24,25 +24,26 @@ public class FuelStation {
 	public Double FuelCar(String fuel, Double amount) {
 		switch (fuel) {
 		case "ON": {
-			if(amount<amountON) {
-			amountON -= amount;
-			Double toPay = amount * priceON;
-			System.out.println("You tanked "+amount+" liters of ON with price:"+priceON);
-			return toPay;}
-			else {System.out.println("Not enough fuel, I tank only"+amountON);
-			
+			if (amount < amountON) {
+				amountON -= amount;
+				Double toPay = amount * priceON;
+				System.out.println("You tanked " + amount + " liters of ON with price:" + priceON);
+				return toPay;
+			} else {
+				System.out.println("Not enough fuel, I tank only" + amountON);
+
 			}
 		}
 		case "PB": {
 			amountPB -= amount;
 			Double toPay = amount * pricePB;
-			System.out.println("You tanked "+amount+" liters of ON with price:"+pricePB);
+			System.out.println("You tanked " + amount + " liters of ON with price:" + pricePB);
 			return toPay;
 		}
 		case "LPG": {
 			amountLPG -= amount;
 			Double toPay = amount * priceLPG;
-			System.out.println("You tanked "+amount+" liters of ON with price:"+priceLPG);
+			System.out.println("You tanked " + amount + " liters of ON with price:" + priceLPG);
 			return toPay;
 		}
 
@@ -93,8 +94,8 @@ public class FuelStation {
 	}
 
 	public void PrintPrices() {
-		// for (fuelSt:FuelStation) {
-		// System.out.println(fuelSt.toString);
+		System.out.println(
+				"stacja:" + getStationName() + " CenaPB:" + pricePB + " cenaON:" + priceON + " cenaLPG:" + priceLPG);
 	}
 	// }
 
