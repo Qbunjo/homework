@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class TestOgloszenie {
 
 	public static void main(String[] args) {
-		String filePath = "C:\\Users\\Jakuboslaw\\eclipse-workspace\\JJ01-Podstawy\\src\\homework1\\homework\\src\\pl\\homework\\meeting03\\e01\\";
+		String filePath = "C:\\Users\\Jakuboslaw\\eclipse-workspace\\homework\\src\\pl\\homework\\meeting03\\e01\\";
 		// String filePath =
 		// "/home/qbunjo/git/homework/src/main/java/pl/homework/meeting03/e01/";
 		// linux path (cause I work on both systems)
