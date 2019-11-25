@@ -23,40 +23,67 @@ public class FuelStation {
 
 	public Double FuelCar(String fuel, Double amount) {
 		switch (fuel) {
-		case "ON":{
+		case "ON": {
 			amountON -= amount;
-			Double toPay=amount*priceON;
-			return toPay;}
-		case "PB":{
-			amountPB -= amount;
-			Double toPay=amount*pricePB;
-			return toPay;}
-		case "LPG":{
-			amountLPG -= amount;
-			Double toPay=amount*priceLPG;
-			return toPay;}
+			Double toPay = amount * priceON;
+			System.out.println("You tank "+amount+" liters of ON with price:"+priceON);
+			return toPay;
 		}
-		return null;
+		case "PB": {
+			amountPB -= amount;
+			Double toPay = amount * pricePB;
+			return toPay;
+		}
+		case "LPG": {
+			amountLPG -= amount;
+			Double toPay = amount * priceLPG;
+			return toPay;
+		}
+
+		default:
+			return null;
+		}
 	}
 
 	public void FillIn(String fuel, Double amount) {
 		switch (fuel) {
-		case "ON":{
+		case "ON": {
 			amountON = Double.sum(amountON, amount);
-			System.out.println("ON tank filled. Now contains: "+amountON);}
-			case "PB":{
-			amountPB =Double.sum(amountPB, amount);
-			System.out.println("PB tank filled. Now contains:"+amountPB);}
-			case "LPG":{
-			amountLPG = Double.sum(amountLPG,amount);
-			System.out.println("LPG tank filled. Now contains:");
-			}
+			System.out.println("ON tank filled. Now contains: " + amountON);
+			break;
 		}
-		
+		case "PB": {
+			amountPB = Double.sum(amountPB, amount);
+			System.out.println("PB tank filled. Now contains:" + amountPB);
+			break;
+		}
+		case "LPG": {
+			amountLPG = Double.sum(amountLPG, amount);
+			System.out.println("LPG tank filled. Now contains:" + amountLPG);
+			break;
+		}
+		}
+
 	}
 
 	public void SetPrice(String fuel, Double price) {
-
+		switch (fuel) {
+		case "ON": {
+			setPriceON(price);
+			System.out.println("New ON price set: " + price);
+			break;
+		}
+		case "PB": {
+			setPricePB(price);
+			System.out.println("New PB price set: " + price);
+			break;
+		}
+		case "LPG": {
+			setPriceLPG(price);
+			System.out.println("New ON price set: " + price);
+			break;
+		}
+		}
 	}
 
 	public void PrintPrices() {
