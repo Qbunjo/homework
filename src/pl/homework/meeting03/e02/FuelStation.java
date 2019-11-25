@@ -38,16 +38,30 @@ public class FuelStation {
 			}
 		}
 		case "PB": {
-			amountPB -= amount;
-			Double toPay = amount * pricePB;
-			System.out.println("You tanked " + amount + " liters of ON with price:" + pricePB);
-			return toPay;
+			if (amount < amountPB) {
+				amountPB -= amount;
+				Double toPay = amount * pricePB;
+				System.out.println("You tanked " + amount + " liters of ON with price:" + pricePB);
+				return toPay;
+			} else {
+				System.out.println("Not enough fuel, I tank only " + amountPB + " liters");
+				Double toPay = amount * pricePB;
+				amountPB = 0.0;
+				return toPay;
+			}
 		}
 		case "LPG": {
-			amountLPG -= amount;
-			Double toPay = amount * priceLPG;
-			System.out.println("You tanked " + amount + " liters of ON with price:" + priceLPG);
-			return toPay;
+			if (amount < amountLPG) {
+				amountLPG -= amount;
+				Double toPay = amount * priceLPG;
+				System.out.println("You tanked " + amount + " liters of LPG with price:" + priceLPG);
+				return toPay;
+			} else {
+				System.out.println("Not enough fuel, I tank only " + amountLPG + " liters");
+				Double toPay = amount * priceLPG;
+				amountPB = 0.0;
+				return toPay;
+			}
 		}
 
 		default:
