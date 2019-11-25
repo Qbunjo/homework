@@ -24,10 +24,14 @@ public class FuelStation {
 	public Double FuelCar(String fuel, Double amount) {
 		switch (fuel) {
 		case "ON": {
+			if(amount<amountON) {
 			amountON -= amount;
 			Double toPay = amount * priceON;
 			System.out.println("You tanked "+amount+" liters of ON with price:"+priceON);
-			return toPay;
+			return toPay;}
+			else {System.out.println("Not enough fuel, I tank only"+amountON);
+			
+			}
 		}
 		case "PB": {
 			amountPB -= amount;
