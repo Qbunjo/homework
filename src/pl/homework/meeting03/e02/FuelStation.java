@@ -25,13 +25,16 @@ public class FuelStation {
 		switch (fuel) {
 		case "ON":{
 			amountON -= amount;
-			return amountON;}
+			Double toPay=amount*priceON;
+			return toPay;}
 		case "PB":{
 			amountPB -= amount;
-			return amountPB;}
+			Double toPay=amount*pricePB;
+			return toPay;}
 		case "LPG":{
 			amountLPG -= amount;
-			return amountLPG;}
+			Double toPay=amount*priceLPG;
+			return toPay;}
 		}
 		return null;
 	}
@@ -39,11 +42,14 @@ public class FuelStation {
 	public void FillIn(String fuel, Double amount) {
 		switch (fuel) {
 		case "ON":{
-			amountON = Double.sum(amountON, amount);}
+			amountON = Double.sum(amountON, amount);
+			System.out.println("ON tank filled. Now contains: "+amountON);}
 			case "PB":{
-			amountPB =Double.sum(amountPB, amount);}
+			amountPB =Double.sum(amountPB, amount);
+			System.out.println("PB tank filled. Now contains:"+amountPB);}
 			case "LPG":{
 			amountLPG = Double.sum(amountLPG,amount);
+			System.out.println("LPG tank filled. Now contains:");
 			}
 		}
 		
