@@ -16,7 +16,7 @@ public class Main {
 		stations.add(station2);
 		stations.add(station3);
 		stations.add(station4);
-
+		
 		// przed uzupelnianiem
 		System.out.println(station1.toString());
 		station1.FillIn("ON", 20.0);
