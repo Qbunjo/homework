@@ -26,17 +26,19 @@ public class FuelStation {
 		case "ON": {
 			amountON -= amount;
 			Double toPay = amount * priceON;
-			System.out.println("You tank "+amount+" liters of ON with price:"+priceON);
+			System.out.println("You tanked "+amount+" liters of ON with price:"+priceON);
 			return toPay;
 		}
 		case "PB": {
 			amountPB -= amount;
 			Double toPay = amount * pricePB;
+			System.out.println("You tanked "+amount+" liters of ON with price:"+pricePB);
 			return toPay;
 		}
 		case "LPG": {
 			amountLPG -= amount;
 			Double toPay = amount * priceLPG;
+			System.out.println("You tanked "+amount+" liters of ON with price:"+priceLPG);
 			return toPay;
 		}
 
