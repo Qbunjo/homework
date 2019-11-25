@@ -9,6 +9,7 @@ public class FuelStation {
 	private Double amountON;
 	private Double amountPB;
 	private Double amountLPG;
+	
 
 	public FuelStation(String stationName, Double priceON, Double pricePB, Double priceLPG) {
 		StationName = stationName;
@@ -18,6 +19,7 @@ public class FuelStation {
 		amountON = 100.00;
 		amountLPG = 100.00;
 		amountPB = 100.00;
+		
 
 	}
 
