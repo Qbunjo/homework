@@ -30,7 +30,10 @@ public class FuelStation {
 				System.out.println("You tanked " + amount + " liters of ON with price:" + priceON);
 				return toPay;
 			} else {
-				System.out.println("Not enough fuel, I tank only" + amountON);
+				System.out.println("Not enough fuel, I tank only " + amountON + " liters");
+				Double toPay = amountON * priceON;
+				amountON = 0.0;
+				return toPay;
 
 			}
 		}
