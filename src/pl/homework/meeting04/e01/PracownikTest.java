@@ -26,6 +26,14 @@ class PracownikTest {
 		p1.praca(9);
 		assertEquals(1000, p1.getStawka());
 	}
+	
+	@Test
+	public void testPracaTest2() {
+		Worker p1 = new Worker(100);
+		p1.praca(4);
+		p1.praca(4);
+		assertEquals(800, p1.getStawka());
+	}
 	@Test
 	public void testPracaNadgodziny2() {
 		Worker p1 = new Worker(100);
