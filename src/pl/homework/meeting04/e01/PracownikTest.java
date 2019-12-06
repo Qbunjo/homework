@@ -15,16 +15,17 @@ class PracownikTest {
 	public void testPraca() {
 		Worker p1 = new Worker(100);
 		Worker p2= new Worker (150);
-		p1.praca(8);
-		p2.praca(8);
-		assertEquals(800, p1.getStawka());
-		assertEquals(1200, p2.getStawka());
+		p1.praca(10);
+		p2.praca(12);
+		assertEquals(10, p1.getZapczas());
+		assertEquals(12, p2.getZapczas());
 	}
 	@Test
 	public void testPracaNadgodziny() {
 		Worker p1 = new Worker(100);
 		p1.praca(9);
-		assertEquals(1000, p1.getStawka());
+		p1.wyplata();
+		assertEquals(1000, p1.getPrzeprac());
 	}
 	
 	@Test
@@ -32,7 +33,8 @@ class PracownikTest {
 		Worker p1 = new Worker(100);
 		p1.praca(4);
 		p1.praca(4);
-		assertEquals(800, p1.getStawka());
+		p1.wyplata();
+		assertEquals(800, p1.getPrzeprac());
 	}
 	@Test
 	public void testPracaNadgodziny2() {
@@ -40,12 +42,12 @@ class PracownikTest {
 		Worker p2 = new Worker(150);
 		p1.praca(10);
 		p2.praca(10);
-		assertEquals(1200, p1.getStawka());
-		assertEquals(1800,p2.getStawka());
+		p1.wyplata();
+		p2.wyplata();
+		assertEquals(1200, p1.getPrzeprac());
+		assertEquals(1800, p2.getPrzeprac());
+	
 	}
 
-	@Test
-	public void testWyplata() {
 
-	}
 }
