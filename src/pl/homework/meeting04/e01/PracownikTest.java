@@ -8,7 +8,7 @@ class PracownikTest {
 	@Test
 	public void testKonstruktor() {
 		Worker p1 = new Worker(100);
-		assertEquals(100, 100);
+		assertEquals(100, p1.getStawka());
 	}
 
 	@Test
