@@ -46,7 +46,17 @@ class PracownikTest {
 		p2.wyplata();
 		assertEquals(1200, p1.getPrzeprac());
 		assertEquals(1800, p2.getPrzeprac());
-	
+	}
+	@Test	
+	public void testPracaZerowanie() {
+			Worker p1 = new Worker(100);
+			Worker p2 = new Worker(150);
+			p1.praca(10);
+			p2.praca(10);
+			p1.wyplata();
+			p2.wyplata();
+			//zerowanie po wyplacie
+			assertEquals(0, p1.getZapczas());
 	}
 
 
