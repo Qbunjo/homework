@@ -36,7 +36,7 @@ class FakturaTest {
 		Faktura nowa = new Faktura(null);
 			Pozycja.DodajPozycje("12/3","Zmywarka",4,1240.40,23);
 		
-			Double total=Pozycja.WartoscPozycji(1);
+		//	Double total=Pozycja.WartoscPozycji(1);
 			assertEquals(12,total);
 	}
 	@Test
@@ -47,7 +47,13 @@ class FakturaTest {
 			Pozycja.DodajPozycje("12/3","Pralka2",2,3.40,23);	
 		//	Double total=Pozycja.doZaplaty();
 		//assertEquals(23,total);
-	
+	}
+	@Test		
+	void testWydrukuj() {
+			Faktura nowa = new Faktura(null);
+			Pozycja.DodajPozycje("12/3","Zmywarka",4,1240.40,23);
+			Pozycja.DodajPozycje("12/5","Pralka",2,1000.40,23);
+			Pozycja.Wydrukuj();
 	}
 	}
 
