@@ -27,7 +27,7 @@ public class Faktura {
 		private int vat;
 	}
 
-	public void  Pozycja(String numer, String towar, int ilosc, Double cena, int vat) {
+	public void Pozycja(String numer, String towar, int ilosc, Double cena, int vat) {
 		this.numer=numer;
 		this.towar=towar;
 		this.ilosc=ilosc;

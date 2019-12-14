@@ -11,7 +11,7 @@ class FakturaTest {
 		
 	@Test void Faktura() {
 		Faktura nowa=new Faktura(null);
-		Faktura.Pozycja("1","Lodówka",2,233.3,30);
+		Faktura.dodajPozycje("1","Lodówka",2,233.3,30);
 		System.out.println(nowa.getTowar());
 	assertEquals("Lodowka", nowa.getTowar());
 	}
