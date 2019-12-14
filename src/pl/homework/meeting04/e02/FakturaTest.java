@@ -36,7 +36,7 @@ class FakturaTest {
 		Faktura nowa = new Faktura(null);
 			Pozycja.DodajPozycje("12/3","Zmywarka",4,1240.40,23);
 		
-		//	Double total=Pozycja.WartoscPozycji(1);
+			Double total=Pozycja.WartoscPozycji(1);
 			assertEquals(12,total);
 	}
 	@Test
