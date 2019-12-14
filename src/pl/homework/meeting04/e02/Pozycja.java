@@ -49,13 +49,12 @@ public class Pozycja {
 
 	};
 
-	public void Wydrukuj() {
-		for (Pozycja pozycja:Faktura.lista) {
-			System.out.println(String.valueOf(Faktura.lista));
-			//it does not print list, but its address in memory
+	public static void Wydrukuj() {
+			System.out.println(Faktura.lista);
+			
 		}
 
-	}
+	
 
 	
 
@@ -101,7 +100,7 @@ public class Pozycja {
 
 	@Override
 	public String toString() {
-		return "Pozycja [numer=" + numer + ", towar=" + towar + ", ilosc=" + ilosc + ", cena=" + cena + ", vat=" + vat
+		return "Pozycja [numer faktury:" + numer + ", towar:" + towar + ", ilosc:" + ilosc + ", cena:" + cena + ", vat:" + vat
 				+ "]";
 	}
 
