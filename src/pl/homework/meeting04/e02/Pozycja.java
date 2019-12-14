@@ -29,7 +29,7 @@ public class Pozycja {
 		return ilosc;
 	}
 
-	public static Double WartoscPozycji(int numerPozycji) {
+	public  Double WartoscPozycji(int numerPozycji) {
 		int i=0;
 		double total=0.00;;
 		for (Pozycja pozycja:Faktura.lista) {
