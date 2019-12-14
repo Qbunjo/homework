@@ -4,26 +4,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Faktura {
+	private String numer;
+	private String towar;
+	private int ilosc;
+	private Double cena;
+	private int vat;
 	
-	List <Faktura> lista = new ArrayList<>();
+	public List<Faktura> lista = new ArrayList<>();
 
-	public Faktura(String numer, Double wartosc) {
+	public Faktura(String numer, String towar, int ilosc, Double cena, int vat) {
 		
 	}
-
 	public void dodajPozycje(String towar, int ilosc, double cena, int vat) {
-		Pozycja pozycja = new Pozycja(towar,ilosc,cena,vat);
-		lista.add(pozycja);
+		Faktura pozycja = new Faktura(numer,towar, ilosc, cena,vat);
+		lista.add(numer,towar,ilosc,cena,vat);
 	}
 
 	public int iloscPozycji(String numer) {
 		
-		int ilosc=0;;
+		int ilosc=lista.size();;
 		return ilosc;
 	}
 
 	public double wartoscPozycji(String numer, int numerPozycji) {
-		int wartosc = 0;
+		Double wartosc = cena*vat*ilosc;
 		return wartosc;
+	}
+	public double doZaplaty() {
+		return 0;
+		
+	};
+	public void wydrukuj(){
+		for (int i=0; i==lista.size();i++) {
+			System.out.println("drukuj wszystko");	
+		}
+		
 	}
 }
