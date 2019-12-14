@@ -16,35 +16,35 @@ class FakturaTest {
 	
 	@Test void dodajPozycje() {
 		Faktura nowa = new Faktura(null);
-		Pozycja.dodajPozycje("12/3","Lodowka",2,3.40,23);
-		Pozycja.dodajPozycje("12/3","Pralka",2,3.40,23);				 
+		Pozycja.DodajPozycje("12/3","Lodowka",2,3.40,23);
+		Pozycja.DodajPozycje("12/3","Pralka",2,3.40,23);				 
 		assertEquals(2, Pozycja.iloscPozycji());
 	}
 
 	@Test
 	void ilePozycji() {
 		Faktura nowa = new Faktura(null);
-		Pozycja.dodajPozycje("12/3","Lodowka",2,3.40,23);
-		Pozycja.dodajPozycje("12/3","Pralka",2,3.40,23);	
-		Pozycja.dodajPozycje("12/3","Pralka2",2,3.40,23);	
-		Pozycja.dodajPozycje("12/3","Pralka3",2,3.40,23);	
+		Pozycja.DodajPozycje("12/3","Lodowka",2,3.40,23);
+		Pozycja.DodajPozycje("12/3","Pralka",2,3.40,23);	
+		Pozycja.DodajPozycje("12/3","Pralka2",2,3.40,23);	
+		Pozycja.DodajPozycje("12/3","Pralka3",2,3.40,23);	
 		assertEquals(4, Pozycja.iloscPozycji());
 	}
 	
 	@Test
-	void wartoscPozycji() {
+	void testWartoscPozycji() {
 		Faktura nowa = new Faktura(null);
-			Pozycja.dodajPozycje("12/3","Zmywarka",4,1240.40,23);
+			Pozycja.DodajPozycje("12/3","Zmywarka",4,1240.40,23);
 		
-			Double total=wartoscPozycji(1);
+			Double total=Pozycja.WartoscPozycji(1);
 			
 	}
 	@Test
 	void testdoZaplaty() {
 		Faktura nowa = new Faktura(null);
-			Pozycja.dodajPozycje("12/3","Zmywarka",4,1240.40,23);
-			Pozycja.dodajPozycje("12/3","Pralka",2,3.40,23);	
-			Pozycja.dodajPozycje("12/3","Pralka2",2,3.40,23);	
+			Pozycja.DodajPozycje("12/3","Zmywarka",4,1240.40,23);
+			Pozycja.DodajPozycje("12/3","Pralka",2,3.40,23);	
+			Pozycja.DodajPozycje("12/3","Pralka2",2,3.40,23);	
 		//	Double total=Pozycja.doZaplaty();
 		//assertEquals(23,total);
 	

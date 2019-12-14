@@ -6,20 +6,22 @@ import java.util.List;
 import javax.management.StringValueExp;
 
 public class Faktura {
-	static List<Pozycja> lista;
+	 static List<Pozycja> lista;
 
 	public Faktura(List<Pozycja> lista) {
 		this.lista = new ArrayList<>();
 
 	}
 
-	public List<Pozycja> getLista() {
+	public static List<Pozycja> getLista() {
 		return lista;
 	}
 
-	public void setLista(List<Pozycja> lista) {
-		this.lista = lista;
+	public static void setLista(List<Pozycja> lista) {
+		Faktura.lista = lista;
 	}
+
+	
 
 	
 
