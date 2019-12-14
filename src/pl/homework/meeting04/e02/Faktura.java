@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Faktura {
-	private String numer;
-	private String towar;
-	private int ilosc;
-	private Double cena;
-	private int vat;
+	
 	List <Faktura> lista = new ArrayList<>();
 
 	public Faktura(String numer, Double wartosc) {
@@ -22,6 +18,7 @@ public class Faktura {
 
 	public int iloscPozycji(String numer) {
 		
+		int ilosc=0;;
 		return ilosc;
 	}
 

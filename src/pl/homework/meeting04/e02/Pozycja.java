@@ -7,7 +7,7 @@ public class Pozycja extends Faktura {
 	private Double cena;
 	private int vat;
 	
-	public Pozycja(String numer, Double wartosc) {
+	public Pozycja(String numer, int ilosc, Double cena, int vat) {
 		super(numer, wartosc);
 		this.numer=numer;
 		this.towar=towar;
