@@ -17,42 +17,6 @@ public class Pozycja {
 		this.vat = vat;
 	}
 
-	public static  void DodajPozycje(String numer, String towar, int ilosc, Double cena, int vat) {
-		Pozycja pozycja = new Pozycja(numer, towar, ilosc, cena, vat);
-		Faktura.lista.add(pozycja);
-	}
-
-	public static  int iloscPozycji() {
-
-		int ilosc = Faktura.lista.size();
-
-		return ilosc;
-	}
-
-	public  Double WartoscPozycji(int numerPozycji) {
-		int i=0;
-		double total=0.00;;
-		for (Pozycja pozycja:Faktura.lista) {
-			if (numerPozycji==i) {
-			total+=getCena()*(1+(getVat()/100)*getIlosc()); break;}
-			i++;
-		}// this does not work because test does not accept non-static methods
-		return total;
-			}
-
-	public Double DoZaplaty() {
-		Double total=0.00;
-		for (Pozycja pozycja:Faktura.lista) {
-			total+=getCena()*(1+(getVat()/100)*getIlosc());
-		}// this does not work because test does not accept non-static methods
-		return total;
-
-	};
-
-	public static void Wydrukuj() {
-			System.out.println(Faktura.lista);
-			
-		}
 
 	
 
