@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Faktura {
-
 	private List<Pozycja> lista;
 
 	public Faktura() {
 		this.lista = new ArrayList<>();
+
 	}
 
 	public List<Pozycja> getLista() {
