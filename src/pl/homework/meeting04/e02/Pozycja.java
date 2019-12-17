@@ -17,11 +17,6 @@ public class Pozycja {
 		this.vat = vat;
 	}
 
-
-	
-
-	
-
 	public String getNumer() {
 		return numer;
 	}
@@ -64,10 +59,8 @@ public class Pozycja {
 
 	@Override
 	public String toString() {
-		return "Pozycja [numer faktury:" + numer + ", towar:" + towar + ", ilosc:" + ilosc + ", cena:" + cena + ", vat:" + vat
-				+ "]";
+		return "numer faktury:" + numer + ", towar:" + towar + ", ilosc:" + ilosc + ", cena:" + cena + ", vat:"
+				+ vat + "%";
 	}
-
-	
 
 }

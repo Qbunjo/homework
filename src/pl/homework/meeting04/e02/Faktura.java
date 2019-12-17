@@ -27,13 +27,13 @@ public class Faktura {
 		return ilosc;
 	}
 
-	public  Double WartoscPozycji(int numerPozycji) {
-		int i=0;
-		double total=0.00;;
-		for (Pozycja pozycja: lista) {
-			if (numerPozycji==i+1) {
+	public Double WartoscPozycji(int numerPozycji) {
+		int i = 0;
+		double total = 0.00;
+		for (Pozycja pozycja : lista) {
+			if (numerPozycji == i + 1) {
 				Pozycja szukanaPozycja = lista.get(i);
-				total+= szukanaPozycja.getCena()*(1+(szukanaPozycja.getVat()/100)*szukanaPozycja.getIlosc());
+				total += szukanaPozycja.getCena() * (1 + (szukanaPozycja.getVat() / 100) * szukanaPozycja.getIlosc());
 				break;
 			}
 			i++;
@@ -42,16 +42,24 @@ public class Faktura {
 	}
 
 	public Double DoZaplaty() {
-		Double total=0.00;
-		for (Pozycja pozycja: lista) {
-			total+= pozycja.getCena()*(1+(pozycja.getVat()/100)*pozycja.getIlosc());
+		Double total = 0.00;
+		for (Pozycja pozycja : lista) {
+			total += pozycja.getCena() * (1 + (pozycja.getVat()) / 100) * pozycja.getIlosc();
+
 		}
 		return total;
 
 	};
 
 	public void Wydrukuj() {
-		System.out.println(lista);
+		
+		Double total = 0.00;
+		for (Pozycja pozycja : lista) {
+			System.out.println(pozycja);
+			total += pozycja.getCena() * (1 + (pozycja.getVat()) / 100) * pozycja.getIlosc();
+		}
+		total=(double) Math.round((total*100)/100);
+		System.out.println("razem do zapłaty:"+total+" PLN");
 
 	}
 
