@@ -5,18 +5,19 @@ import java.util.List;
 
 public class Faktura {
 	private List<Pozycja> lista;
+	private String nazwa;
 
-	public Faktura() {
+	public Faktura(String nazwa) {
 		this.lista = new ArrayList<>();
-
+		this.nazwa=nazwa;
 	}
 
 	public List<Pozycja> getLista() {
 		return lista;
 	}
 
-	public void DodajPozycje(String numer, String towar, int ilosc, Double cena, int vat) {
-		Pozycja pozycja = new Pozycja(numer, towar, ilosc, cena, vat);
+	public void DodajPozycje(String towar, int ilosc, Double cena, int vat) {
+		Pozycja pozycja = new Pozycja(towar, ilosc, cena, vat);
 		lista.add(pozycja);
 	}
 
@@ -49,16 +50,20 @@ public class Faktura {
 		}
 		return total;
 
-	};
+	}
 
 	public void Wydrukuj() {
-		
+		System.out.println("Numer faktury:"+nazwa);		
 		Double total = 0.00;
+		int i=1;
 		for (Pozycja pozycja : lista) {
-			System.out.println(pozycja);
+			System.out.println(i+". "+pozycja);
 			total += pozycja.getCena() * (1 + (pozycja.getVat()) / 100) * pozycja.getIlosc();
+			i++;
 		}
-		total=(double) Math.round((total*100)/100);
+		total=Math.round(total*Math.pow(10, 2))/Math.pow(10, 2); //zaokraglanie
+		
+
 		System.out.println("razem do zapłaty:"+total+" PLN");
 
 	}
